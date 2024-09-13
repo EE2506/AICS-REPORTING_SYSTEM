@@ -13,23 +13,23 @@
             font-size: 12px; /* Smaller font size */
             text-align: center;
         }
-    
+
         .card-body {
             padding: 15px; /* Less padding */
         }
-    
+
         h1 {
             margin-bottom: 10px;
             margin-top: 50px;
             font-size: 24px;
         }
-    
+
         h2 {
             margin-top: 0;
             font-size: 18px; /* Slightly smaller header */
             color: #333;
         }
-    
+
         /* Tabs */
         .tabs {
             display: flex;
@@ -39,7 +39,7 @@
             margin-top: 30px;
             margin-left: 20px;
         }
-    
+
         .tab {
             padding: 8px; /* Adjusted padding */
             background-color: #024ba3; /* Primary tab background color */
@@ -51,20 +51,20 @@
             margin-right: 5px; /* Space between tabs */
             transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
         }
-    
+
         /* Active Tab State */
         .tab.active {
             background-color: #0261db; /* Slightly lighter background for active tab */
             color: white;
             font-weight: bold; /* Emphasize active tab */
         }
-    
+
         /* Hover Effect */
         .tab:hover {
             background-color: #0261db; /* Lighter background on hover */
             color: #ffffff; /* Ensure text remains white */
         }
-    
+
         /* Tab Container for alignment */
         .tab-container {
             display: flex;
@@ -73,26 +73,26 @@
             gap: 5px; /* Space between tabs */
             padding-bottom: 10px; /* Space below tabs */
         }
-    
+
         .tab-content {
             display: none;
         }
-    
+
         .tab-content.active {
             display: block;
         }
-    
+
         /* Table Container */
         .table-container {
             padding: 10px; /* Reduced padding */
         }
-    
+
         th, td {
             border: 1px solid #ddd;
             padding: 6px; /* Smaller padding */
             font-size: 12px; /* Smaller font size */
         }
-    
+
         th {
             background-color: #024ba3;
             color: white;
@@ -100,11 +100,11 @@
             padding: 8px; /* Reduced padding for headers */
             font-size: 14px;
         }
-    
+
         .highlight {
             background-color: #e0f7da;
         }
-    
+
         .total-row {
             font-weight: bold;
             background-color: #cbdafd;
@@ -113,7 +113,7 @@
             border-bottom: 2px solid hsl(218, 83%, 69%);
             font-size: 14px;
         }
-    
+
         .container {
             display: flex;
             align-items: right;
@@ -122,7 +122,7 @@
             margin-bottom: 20px; /* Adjust as needed */
             margin-right: 80px;
         }
-    
+
         .filter-container,
         .date-filter-container {
             margin-bottom: 1px;
@@ -134,7 +134,7 @@
             font-size: 12px;
             width: 250px; /* Ensure uniform width */
         }
-    
+
         .date-filter-container input,
         .filter-container select,
         .export-button-container .btn {
@@ -143,19 +143,19 @@
             width: 100%; /* Full width within the container */
             box-sizing: border-box; /* Include padding and border in width */
         }
-    
+
         .filter-container select {
             padding: 8px; /* Reduced padding */
             font-size: 12px; /* Adjusted font size */
         }
-    
+
         .export-button-container .btn {
             padding: 5px;
             font-size: 12px; /* Adjusted font size */
             margin
         }
     </style>
-    
+
 </head>
 <body>
     <div>
@@ -220,230 +220,59 @@
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <h2>Table 1: Summary of beneficiaries served with cost, beneficiary category, and age group.</h2>
-                        <table class="table table-striped table responsive">
-                            <thead>
-                                <tr class="text-center">
-                                    <th rowspan="2">Client Category</th>
-                                    <th rowspan="2">Age Group</th>
-                                    <th colspan="4">Current Fund</th>
-                                    <th colspan="4">Continuing</th>
-                                    <th colspan="4">TOTAL</th>
-                                </tr>
-                                <tr class="text-center">
-                                    <th>Male</th>
-                                    <th>Female</th>
-                                    <th>Total</th>
-                                    <th>Cost</th>
-                                    <th>Male</th>
-                                    <th>Female</th>
-                                    <th>Total</th>
-                                    <th>Cost</th>
-                                    <th>Male</th>
-                                    <th>Female</th>
-                                    <th>Total</th>
-                                    <th>Cost</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="text-center"> <!--Family Heads and Other Needy Adult (FHONA) --> <!-- 18 to 29 -->
-                                    <td rowspan="3">Family Heads and Other Needy Adult (FHONA)</td>
-                                    <td>18 to 29</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center"><!-- 30-44 -->
-                                    <td>30 to 44</td>
-                                    <<td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center"> <!--45 to 59 -->
-                                    <td>45 to 59</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td rowspan="3">Men/Women in Specially Difficult Circumstances (WEDC)</td>
-                                    <td>18 to 29</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>30 to 44</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>45 to 59</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td rowspan="2">Children in Need of Special Protection (CNSP)</td>
-                                    <td>0 to 13</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>14 to 17</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                
-                                <tr class="text-center">
-                                    <td rowspan="1">Youth (YNSP)</td>
-                                    <td>18 to 30</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td rowspan="3">Senior Citizens (SC)</td>
-                                    <td>60 to 70</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>71 to 79</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>80 and above</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td rowspan="8">Persons with Disabilities (PWD)</td>
-                                    <td>0 to 13</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>14 to 17</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>18 to 29</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>30 to 44</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>45 to 59</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                <tr class="text-center">
-                                    <td>60 to 70</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>71 to 79</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-                                <tr class="text-center">
-                                    <td>80 and above</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
+                                <table class="table-auto w-full text-center">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Category</th>
+                                <th rowspan="2">Gender</th>
+                                <th colspan="3">Age Groups</th> <!-- Adjust age groups as needed -->
+                                <th rowspan="2">Total Amount</th> <!-- Add total amount column -->
+                            </tr>
+
+                            <tr>
+                                <th>18-29</th>
+                                <th>30-44</th>
+                                <th>45-59</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($totalsByGender as $category => $sex)
+                                @php
+                                    // Calculate the number of rows needed for rowspan (for Male and Female combined)
+                                    $rowspan = count($sex['MALE']) + count($genders['FEMALE']);
+                                    // Calculate total amount for each category
+                                    $totalAmount = array_sum([
+                                        array_sum($sex['MALE']),
+                                        array_sum($sex['FEMALE'])
+                                    ]);
+                                @endphp
+                                <tr>
+                                    <!-- Category row with rowspan -->
+                                    <td rowspan="{{ $rowspan }}">{{ $category }}</td>
+
+                                    <!-- First row: Male data -->
+                                    <td>Male</td>
+                                    <td>{{ $sex['MALE']['18-29'] }}</td>
+                                    <td>{{ $sex['MALE']['30-44'] }}</td>
+                                    <td>{{ $sex['MALE']['45-59'] }}</td>
+                                    <td rowspan="{{ $rowspan }}">{{ $totalAmount }}</td> <!-- Total amount cell -->
                                 </tr>
 
-                                <tr class="text-center">
-                                    <td rowspan="8">Persons Living with HIV-AIDS (PLHIV)</td>
-                                    <td>0 to 13</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-
+                                <!-- Second row: Female data -->
+                                <tr>
+                                    <td>Female</td>
+                                    <td>{{ $sex['FEMALE']['18-29'] }}</td>
+                                    <td>{{ $sex['FEMALE']['30-44'] }}</td>
+                                    <td>{{ $sex['FEMALE']['45-59'] }}</td>
                                 </tr>
-                                <tr class="text-center">
-                                    <td>14 to 17</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
+                            @endforeach
+                        </tbody>
+                    </table>
 
-                                </tr>
-                                <tr class="text-center">
-                                    <td>18 to 29</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-                                </tr>
-
-                                <tr class="text-center">
-                                    <td>30 to 44</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-
-
-                                </tr>
-                                <tr class="text-center">
-                                    <td>45 to 59</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-
-                                </tr>
-
-                                <tr class="text-center">
-                                    <td>60 to 70</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-
-                                </tr>
-
-                                <tr class="text-center">
-                                    <td>71 to 79</td>
-                                    <td><!--Male--></td><td><!--Female--></td><td><!--Total--></td><td><!--Cost--></td> <!--Current Fund -->
-                                    <td>-</td><td>-</td><td>-</td><td>-</td><!--Continuing -->
-                                    <td></td><td></td><td></td><td></td> <!--Total-->
-
-
-
-                                </tr>
-                                <tr class="text-center">
-                                    <td>80 and above</td>
-
-                                </tr>
-
-
-                                <tr class="total-row">
-                                    <td colspan="2" class="total-row text-left">GRAND TOTAL</td>
-                                    <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Cost--></td>
-                                    <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Continuing --></td> 
-                                    <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Total --></td> 
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
-            </div> <!-- Table 1 -->
+            </div> <!--Table 1 -->
+
 
 
 
@@ -689,8 +518,8 @@
                                             <tr class="total-row">
                                         <td colspan="1" class="total-row text-left">GRAND TOTAL</td>
                                         <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Cost--></td>
-                                        <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Continuing --></td> 
-                                        <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Total --></td> 
+                                        <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Continuing --></td>
+                                        <td class="total-row text-center"><!--Male--></td><td class="total-row text-center"><!--Female--></td><td class="total-row text-center"><!--Total--></td><td class="total-row text-center"><!--Total --></td>
                                     </tr>
                                 </tbody>
                             </table>
